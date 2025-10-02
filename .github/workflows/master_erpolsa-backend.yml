@@ -23,6 +23,10 @@ jobs:
         with:
           node-version: '20.x'
 
+      - name: Change to backend folder
+        run: cd backend
+
+
       - name: npm install, build, and test
         run: |
           npm install
@@ -67,3 +71,4 @@ jobs:
           package: .
 
           
+
